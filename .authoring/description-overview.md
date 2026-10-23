@@ -1,0 +1,1 @@
+Practice building a Java page-summary feature from supplied HTML. You’ll work with page-level information and the document body to return a title and first heading, then check your implementation against the starter project’s tests. Start with the task and the Java component in the case checkout; no network access is needed.

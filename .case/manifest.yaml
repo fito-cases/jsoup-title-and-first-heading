@@ -1,7 +1,7 @@
 title: "Read a Page’s Title and First Body Heading"
 type: implementation
 version: "1.0.0"
-status: draft
+status: published
 estimated_duration_minutes: 40
 language: en
 tags: [java, jsoup, html, dom]
