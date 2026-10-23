@@ -1,6 +1,6 @@
 # Intended approach (evaluator only)
 
-Parse the supplied HTML string with jsoup into a Document. Obtain the page title from the document and select the first h1 within the parsed body; obtain that heading's full text, including nested text. Avoid string-search shortcuts and network access. Refine the exact entry point and test evidence after the starter project exists.
+In `PageSummarizer.summarize(String)`, parse the supplied HTML string with jsoup into a Document. The starter already obtains the title via `page.title()`; select the first `h1` within `page.body()` (for example, `page.body().selectFirst("h1")`) and obtain its full text with `text()`, including nested text. The supplied fixture pages both have body h1 elements. Avoid string-search shortcuts and network access. On `main`, `./gradlew test --offline` runs two tests: `returnsTitleForSuppliedPages()` passes and `summarizesSuppliedPages()` fails because the heading is empty. The local `case/solution-v1.0.0` branch holds the working implementation; its test suite should pass.
 
 # Rubric expectations
 
