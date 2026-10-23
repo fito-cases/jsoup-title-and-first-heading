@@ -1,6 +1,6 @@
 title: "Read a Page’s Title and First Body Heading"
 type: implementation
-version: "1.0.0"
+version: "1.0.1"
 status: published
 estimated_duration_minutes: 40
 language: en
@@ -10,5 +10,5 @@ authors:
     email: 124610146+pasemes2@users.noreply.github.com
 submission:
   method: pull_request
-  target_branch: v1.0.0
+  target_branch: v1.0.1
   student_branch: solution
