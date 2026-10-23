@@ -1,0 +1,14 @@
+title: "Read a Page’s Title and First Body Heading"
+type: implementation
+version: "1.0.0"
+status: draft
+estimated_duration_minutes: 40
+language: en
+tags: [java, jsoup, html, dom]
+authors:
+  - name: pasemes2
+    email: 124610146+pasemes2@users.noreply.github.com
+submission:
+  method: pull_request
+  target_branch: v1.0.0
+  student_branch: solution

@@ -1,0 +1,1 @@
+The starter project will contain a Java page-summary component and supplied HTML pages. At the starting point, the component does not yet produce both the correct page title and first body heading text across those pages. The source project and its executable checks are built outside Fito; this baseline must be checked against that tree before publication.

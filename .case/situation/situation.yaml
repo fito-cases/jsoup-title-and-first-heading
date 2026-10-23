@@ -1,0 +1,4 @@
+documents:
+  - file: 01_intro.md
+    title: "Page summary request"
+    format: ticket

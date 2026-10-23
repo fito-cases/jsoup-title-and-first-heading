@@ -1,0 +1,9 @@
+learning_objectives:
+  - knowledge_component: concept:jsoup.html-document
+    bloom_level: APPLICATION
+    description: "Use a parsed HTML document to obtain page-level metadata from an HTML string."
+    weight: primary
+  - knowledge_component: concept:jsoup.document-object-model
+    bloom_level: APPLICATION
+    description: "Navigate a parsed page's body structure to obtain the text of its first heading."
+    weight: primary

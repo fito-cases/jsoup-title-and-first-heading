@@ -1,0 +1,43 @@
+criteria:
+  - id: page-title
+    title: "Title extracted from the parsed page"
+    knowledge_component: concept:jsoup.html-document
+    bloom_level: APPLICATION
+    weight: 50
+    levels:
+      - score: 0
+        label: not_achieved
+        description: "The submitted behavior does not return the page title for the supplied HTML string; results are absent or unrelated to the page title."
+      - score: 1
+        label: partial
+        description: "The submitted behavior returns a title for at least one supplied page, but gives an incorrect or incomplete title for other supplied pages."
+      - score: 2
+        label: achieved
+        description: "The submitted behavior returns the correct page title from the supplied HTML strings across the supplied pages, with title text matching the parsed page's title."
+      - score: 3
+        label: exemplary
+        description: "The submitted behavior meets the achieved standard and returns the correct title for pages whose title contains surrounding whitespace or HTML character references, without retaining markup or encoded references in the result."
+    evaluation_method:
+      type: ai
+      prompt_hint: "Inspect the implementation and available test evidence for parsing the supplied HTML string and obtaining the parsed page title. Score only demonstrated behavior at APPLICATION depth. Distinguish full coverage of supplied pages from partial success; check whitespace and character-reference cases before awarding 3."
+  - id: first-body-heading
+    title: "First body heading extracted from the parsed tree"
+    knowledge_component: concept:jsoup.document-object-model
+    bloom_level: APPLICATION
+    weight: 50
+    levels:
+      - score: 0
+        label: not_achieved
+        description: "The submitted behavior does not return heading text from the parsed page body for the supplied HTML pages."
+      - score: 1
+        label: partial
+        description: "The submitted behavior returns heading text for at least one supplied page, but chooses the wrong heading or loses nested text on other supplied pages."
+      - score: 2
+        label: achieved
+        description: "The submitted behavior returns the text of the first h1 in the parsed document body for the supplied pages, including text nested inside that heading."
+      - score: 3
+        label: exemplary
+        description: "The submitted behavior meets the achieved standard and still returns the first body h1 when later body headings or similar text outside the body could otherwise be mistaken for it."
+    evaluation_method:
+      type: ai
+      prompt_hint: "Inspect the implementation and available test evidence for selecting the first h1 within the parsed document body and returning its complete text. Score at APPLICATION depth; check nested text, later headings and similar text outside the body before awarding 3."

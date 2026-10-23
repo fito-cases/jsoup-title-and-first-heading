@@ -1,0 +1,4 @@
+# Planned observable baseline; verify against the finished starter source tree.
+known_errors:
+  - type: incorrect_page_summary
+    description: "At least one supplied HTML page does not yield the expected page title and first body h1 text in the starter implementation."

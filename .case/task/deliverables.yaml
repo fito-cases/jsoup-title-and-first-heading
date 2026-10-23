@@ -1,0 +1,3 @@
+deliverables:
+  - type: code_change
+    description: "A working page-summary component that returns the page title and first body h1 text from the supplied HTML string."
