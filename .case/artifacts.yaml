@@ -1,1 +1,28 @@
-artifacts: []
+artifacts:
+  - path: src/main/java/com/example/pagesummary/PageSummarizer.java
+    role: target
+    description: "Page-summary behavior for supplied HTML strings."
+  - path: src/main/java/com/example/pagesummary/PageSummary.java
+    role: reference
+    description: "Return value containing the page title and first body heading text."
+  - path: src/test/java/com/example/pagesummary/PageSummaryTest.java
+    role: evidence
+    description: "Checks for page titles and heading text across supplied HTML pages."
+  - path: build.gradle
+    role: scaffold
+    description: "Java build configuration and test dependencies."
+  - path: settings.gradle
+    role: scaffold
+    description: "Gradle project settings."
+  - path: gradlew
+    role: scaffold
+    description: "Unix Gradle wrapper launcher."
+  - path: gradlew.bat
+    role: scaffold
+    description: "Windows Gradle wrapper launcher."
+  - path: gradle/wrapper/gradle-wrapper.properties
+    role: scaffold
+    description: "Gradle wrapper distribution settings."
+  - path: gradle/wrapper/gradle-wrapper.jar
+    role: scaffold
+    description: "Gradle wrapper runtime."
