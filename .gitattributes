@@ -1,0 +1,4 @@
+# The Linux start script keeps LF, the Windows one CRLF, and the wrapper jar is binary.
+/gradlew        text eol=lf
+*.bat           text eol=crlf
+*.jar           binary
